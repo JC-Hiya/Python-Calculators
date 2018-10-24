@@ -24,14 +24,14 @@ def calculation():
     print("-----------------------------")
 
     # Asks the user how many numbers they wish to input.
-    numberOfNumbers = input('How many numbers do you need to input?: ')
+    numberOfNumbers = int(input('How many numbers do you need to input?: '))
 
     print("-----------------------------")
 
     # Loops from 0 to the number of numbers(Inputted Above)
     for i in range(0, numberOfNumbers):
         # Asks for the user's input,
-        userInput = input('Enter a number: ')
+        userInput = float(input('Enter a number: '))
         # Adds the user's input to the 'numbers' list accordingly.
         numbers.append(userInput)
 
@@ -134,7 +134,7 @@ notDone = True
 while(notDone):
     x = ''
     calculation()
-    x = raw_input("Calculate Again? (Y/N): ")
+    x = input("Calculate Again? (Y/N): ")
     if(x == 'y'):
         notDone = True
     else:

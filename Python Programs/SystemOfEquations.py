@@ -29,7 +29,7 @@ notDone = True
 while(notDone):
     n = ''
     calculate()
-    n = raw_input("Calculate Again? (Y/N): ")
+    n = input("Calculate Again? (Y/N): ")
     if(n == 'y'):
         notDone = True
     else:

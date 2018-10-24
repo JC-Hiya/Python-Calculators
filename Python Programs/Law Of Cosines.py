@@ -3,7 +3,7 @@ import math
 def calculate():
     print("-----------------------------")
 
-    sideOrAngle = raw_input("Are you solving for a side or angle?(s/a): ")
+    sideOrAngle = input("Are you solving for a side or angle?(s/a): ")
 
     if(sideOrAngle == 's'):
         knownAngle = float(input("Enter known angle: "))
@@ -36,7 +36,7 @@ notDone = True
 while(notDone):
     n = ''
     calculate()
-    n = raw_input("Calculate Again? (Y/N): ")
+    n = input("Calculate Again? (Y/N): ")
     if(n == 'y'):
         notDone = True
     else:
